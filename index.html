@@ -448,6 +448,25 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Напишите нам</h2>
       <!-- Здесь будет форма -->
+      <form class="feedback-form" action="#" method="get">
+        <p class="feedback-text">
+          <label>Ваше имя:
+            <input type="text" name="feedback-name" placeholder="Представьтесь, пожалуйста" required>
+          </label>
+        </p>
+        <p class="feedback-email">
+          <label>Ваш e-mail:
+            <input type="email" name="feedback-mail" placeholder="Для отправки ответа" required>
+          </label>
+        </p>
+        <p class="feedback-text">
+          <label>Текст письма:
+            <textarea name="feedback-text" placeholder="В свободной форме" required></textarea>
+          </label>
+        </p>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+
       <span class="modal-close">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">
           <title>Кнопка закрыть</title>
