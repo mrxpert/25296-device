@@ -145,13 +145,21 @@
           </ol>
         </section>
 
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
         <div class="main-slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+          <div class="main-slider-bullets">
+            <label for="btn-1">
+              <span class="visually-hidden">Показан первый слайд</span>
+            </label>
+            <label for="btn-2">
+              <span class="visually-hidden">Показан второй слайд</span>
+            </label>
+            <label for="btn-3">
+              <span class="visually-hidden">Показан третий слайд</span>
+            </label>
+          </div>
         </div>
 
       </div>
