@@ -104,7 +104,33 @@
 
       <section class="filters">
         <h3>Фильтр:</h3>
-        <!-- Здесь начнется форма -->
+        <form class="filter-form" action="#" method="post">
+          <fieldset class="filter-price">
+            <legend>Стоимость</legend>
+            <!-- Здесь будут ползунки -->
+          </fieldset>
+          <fieldset class="filter-color">
+            <legend>Цвет</legend>
+            <label for="color-black">Черный</label>
+            <input type="checkbox" id="color-black" name="color-black" checked>
+            <label for="color-white">Белый</label>
+            <input type="checkbox" id="color-white" name="color-white">
+            <label for="color-blue">Синий</label>
+            <input type="checkbox" id="color-blue" name="color-blue" checked>
+            <label for="color-red">Красный</label>
+            <input type="checkbox" id="color-red" name="color-red" checked>
+            <label for="color-pink">Розовый</label>
+            <input type="checkbox" id="color-pink" name="color-pink">
+          </fieldset>
+          <fieldset class="filter-bluetooth">
+            <legend>Bluetooth</legend>
+            <label for="bluetooth-on">Есть</label>
+            <input type="radio" id="bluetooth-on" name="bluetooth" checked>
+            <label for="bluetooth-off">Нет</label>
+            <input type="radio" id="bluetooth-off" name="bluetooth">
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
