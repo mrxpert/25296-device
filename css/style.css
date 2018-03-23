@@ -30,13 +30,26 @@
     font-style: normal;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
 
+  font-weight: 800;
   font-family: 'Gilroy', 'Tahoma', sans-serif;
   color: black;
   background-color: white;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
@@ -49,6 +62,37 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.title {
+  font-size: 47px;
+  line-height: 55px;
+}
+
+.btn {
+  padding-left: 3px;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #f0c52e;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f0c52e;
 }
 
 /* main-logo styles here */
@@ -98,7 +142,6 @@ a {
   }
 
     .site-nav-item > a {
-      font-weight: 800;
       font-size: 18px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
