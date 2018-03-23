@@ -181,3 +181,26 @@ a {
         .catalog-item a:active {
           opacity: 0.3;
         }
+
+/* main-slider styles here */
+
+  .slider-item p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: #464646;
+  }
+
+  .item-specs th {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: #464646;
+  }
+
+  .item-specs td {
+    font-weight: 300;
+    font-size: 36px;
+  }
