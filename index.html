@@ -20,7 +20,7 @@
         </svg>
       </a>
 
-      <ul class="user-navigation">
+      <ul class="user-nav">
         <li class="site-search-bar">
           <form class="search-form" action="#" method="get">
             <label class="visually-hidden" for="search-request">Поиск:</label>
@@ -39,42 +39,39 @@
         </li>
       </ul>
 
-      <nav class="main-navigation">
+      <nav class="main-nav">
 
-        <ul class="site-navigation">
-          <li class="catalog-navigation">
-            <h3><a href="#">Каталог товаров</a></h3>
-            <ul class="navigation-item-groups" hidden>
+        <ul class="site-nav">
+          <li class="catalog-nav site-nav-item">
+            <a href="#">Каталог товаров</a>
+            <ul class="catalog-item-groups"> <!-- add hidden -->
               <li>
-                <h4 class="visually-hidden">Группа товаров: аудио и видео</h4>
-                <ul class="navigation-item-list">
-                  <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="catalog-selfie.html">Моноподы для селфи</a></li>
-                  <li><a href="#">Экшн камеры</a></li>
+                <ul class="catalog-item-list">
+                  <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+                  <li class="catalog-item"><a href="catalog-selfie.html">Моноподы для селфи</a></li>
+                  <li class="catalog-item"><a href="#">Экшн камеры</a></li>
                 </ul>
               </li>
               <li>
-                <h4 class="visually-hidden">Группа товаров: фитнес</h4>
-                <ul class="navigation-item-list">
-                  <li><a href="#">Фитнес-браслеты</a></li>
-                  <li><a href="#">Умные часы</a></li>
+                <ul class="catalog-item-list">
+                  <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+                  <li class="catalog-item"><a href="#">Умные часы</a></li>
                 </ul>
               </li>
               <li>
-                <h4 class="visually-hidden">Группа товаров: радиоуправляемые гаджеты</h4>
-                <ul class="navigation-item-list">
-                  <li><a href="#">Квадрокоптеры</a></li>
+                <ul class="catalog-item-list">
+                  <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a href="#">Доставка</a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a href="#">Гарантия</a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a href="#">Контакты</a>
           </li>
         </ul>

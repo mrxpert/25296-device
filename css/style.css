@@ -50,3 +50,90 @@ a {
   height: 1px;
   margin: -1px;
 }
+
+/* main-logo styles here */
+
+.user-nav {
+  font-size: 15px;
+  line-height: 36px;
+  font-family: 'Opensans', 'Tahoma', sans-serif;
+
+  list-style: none;
+  background-color: #f7e296;
+}
+
+  .user-nav a {
+    color: black;
+  }
+
+  .user-nav a:hover,
+  .user-nav a:focus {
+    opacity: 0.6;
+  }
+
+  .user-nav a:active {
+    opacity: 0.3;
+  }
+
+  .site-search-bar {
+    background-color: #f7e296;
+  }
+
+/* search-form styles here */
+
+/* search-form .submit styles here
+  .search-form .submit {
+    font-size: 15px;
+    line-height: 36px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+  }
+*/
+
+/* main-nav styles here */
+
+  .site-nav {
+    list-style: none;
+    background-color: #f7e296;
+  }
+
+    .site-nav-item > a {
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: black;
+    }
+
+    .site-nav-item > a:hover,
+    .site-nav-item > a:focus {
+          opacity: 0.6;
+        }
+
+    .site-nav-item > a:active {
+          opacity: 0.3;
+        }
+
+    .catalog-item-groups {
+      list-style: none;
+    }
+
+      .catalog-item-list {
+        list-style: none;
+      }
+
+        .catalog-item a {
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 36px;
+          font-family: 'Opensans', 'Tahoma', sans-serif;
+          color: black;
+        }
+
+        .catalog-item a:hover,
+        .catalog-item a:focus {
+          opacity: 0.6;
+        }
+
+        .catalog-item a:active {
+          opacity: 0.3;
+        }
