@@ -96,6 +96,13 @@ a {
 }
 
 /* main-logo styles here */
+.main-logo[href="index.html"]:hover {
+  opacity: 0.6;
+}
+
+.main-logo[href="index.html"]:active {
+  opacity: 0.3;
+}
 
 .user-nav {
   font-weight: 300;
