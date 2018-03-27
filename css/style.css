@@ -258,3 +258,35 @@ a {
     font-weight: 300;
     font-size: 36px;
   }
+
+.gadget-list {
+  list-style: none;
+}
+
+  .gadget-list-link {
+    font-size: 18px;
+    line-height: 36px;
+    color: rgb(0, 0, 0);
+  }
+
+  .gadget-list-link:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+    .gadget-list-link span {
+      display: inline-block;
+
+      width: 160px;
+      height: 160px;
+      text-align: center; 
+
+      background-color: rgba(240, 197, 46, 0.5);
+    }
+
+    .gadget-list-link:hover > span {
+      background-color: rgba(240, 197, 46, 1);
+    }
+
+    .gadget-list-link:active .gadget-logo {
+      visibility: hidden;
+    }
