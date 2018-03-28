@@ -290,3 +290,51 @@ a {
     .gadget-list-link:active .gadget-logo {
       visibility: hidden;
     }
+
+.features-slider {
+  background-color: #e5e5e5;
+}
+
+  .features-slider ul {
+    list-style: none;
+  }
+
+  .features-slider p {
+    font-weight: 300;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: #464646;
+  }
+
+  .features-slider li:first-child {
+    background: url('../img/delivery.svg') 100% no-repeat;
+  }
+
+  .features-slider li:nth-child(2) {
+    background: url('../img/warranty.svg') 100% no-repeat;
+  }
+
+  .features-slider li:last-child {
+    background: url('../img/credit.svg') 100% no-repeat; 
+  }
+
+  .features-slider-controls .btn {
+    background-color: transparent;
+  }
+
+  .features-slider-controls .btn:hover {
+    background-color: #f0c52e;
+  }
+
+  .features-slider-controls .btn:active {
+    color: rgba(0, 0, 0, 0.3);
+    
+    background-color: #f0c52e;
+  }
+
+  .btn.feature-slide-active,
+  .btn.feature-slide-active:hover,
+  .btn.feature-slide-active:active {
+    color: #f7e184;
+    
+    background-color: black;
+  }
