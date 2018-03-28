@@ -356,3 +356,12 @@ a {
   .about-us-delivery a:active {
     color: rgba(0, 0, 0, 0.3);
   }
+
+.contacts  p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: 'Opensans', 'Tahoma', sans-serif;
+  color: #464646;
+}
+
