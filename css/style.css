@@ -365,3 +365,77 @@ a {
   color: #464646;
 }
 
+/* Footer styles */
+
+.page-footer {
+  background-color: #464646;
+}
+
+  .footer-user-navigation {
+    list-style: none;
+  }
+
+  .footer-user-navigation a {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 36px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .footer-user-navigation a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .footer-user-navigation a:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+.footer-conditions {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: 'Opensans', 'Tahoma', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+  .footer-conditions ul {
+    list-style: none;
+  }
+
+  .footer-conditions a {
+    font-weight: 800;
+    font-family: 'Gilroy', 'Tahoma', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+  }
+
+  .footer-conditions a:hover {
+    color: rgb(255, 255, 255, 0.6);
+  }
+
+  .footer-conditions a:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
+
+.footer-social ul {
+  list-style: none;
+}
+
+  .social-button:hover {
+    opacity: 0.6;
+  }
+
+  .social-button:active {
+    opacity: 0.1;
+  }
+
+.developer:hover {
+  opacity: 0.6;
+}
+
+.developer:active {
+  opacity: 0.3;
+}
