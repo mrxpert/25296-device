@@ -439,3 +439,56 @@ a {
 .developer:active {
   opacity: 0.3;
 }
+
+/* modal windows styles */
+
+.modal-feedback {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+  .feedback-form input {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: #464646;
+    
+    background-color: #f2f2f2;
+  }
+
+  .feedback-form input:hover,
+  .feedback-form textarea:hover {
+    background-color: #eaeaea;
+  }
+
+  .feedback-form input:focus,
+  .feedback-form textarea:focus {
+    background-color: #f7e296;
+  }
+
+  /* not working properly 
+  .feedback-form input:invalid,
+  .feedback-form textarea:invalid {
+    background-color: #f6dada;
+  }
+  */
+
+  .feedback-form input::placeholder,
+  .feedback-form textarea::placeholder {
+    color: rgba(70, 70, 70, 0.4);
+  }
+
+  .feedback-form textarea {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: #464646;
+    
+    background-color: #f2f2f2;
+  }
+
+.modal-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
