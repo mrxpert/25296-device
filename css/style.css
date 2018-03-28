@@ -80,7 +80,7 @@ a {
   text-align: center;
   color: black;
 
-  background-color: white;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
@@ -315,20 +315,6 @@ a {
 
   .features-slider li:last-child {
     background: url('../img/credit.svg') 100% no-repeat; 
-  }
-
-  .features-slider-controls .btn {
-    background-color: transparent;
-  }
-
-  .features-slider-controls .btn:hover {
-    background-color: #f0c52e;
-  }
-
-  .features-slider-controls .btn:active {
-    color: rgba(0, 0, 0, 0.3);
-    
-    background-color: #f0c52e;
   }
 
   .btn.feature-slide-active,
