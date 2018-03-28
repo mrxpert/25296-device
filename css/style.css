@@ -338,3 +338,9 @@ a {
     
     background-color: black;
   }
+
+.partners ul {
+  list-style: none;
+}
+
+/* styles for color-overlay for partners will be here */
