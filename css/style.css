@@ -344,3 +344,29 @@ a {
 }
 
 /* styles for color-overlay for partners will be here */
+
+.about-us p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: 'Opensans', 'Tahoma', sans-serif;
+  color: #464646;
+}
+
+.about-us-delivery ul {
+  list-style: none;
+}
+
+  .about-us-delivery a {
+    font-size: 16px;
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+  }
+
+  .about-us-delivery a:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .about-us-delivery a:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
