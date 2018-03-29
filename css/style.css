@@ -494,3 +494,27 @@ a {
   border: none;
   cursor: pointer;
 }
+
+/* catalog styles */
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 36px;
+  font-family: 'Opensans', 'Tahoma', sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  
+  list-style: none;
+}
+
+  .breadcrumbs a {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .breadcrumbs a:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .breadcrumbs a:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
+
