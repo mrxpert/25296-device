@@ -213,15 +213,15 @@ a {
           opacity: 0.3;
         }
 
-    .catalog-item-groups {
+    .nav-item-groups {
       list-style: none;
     }
 
-      .catalog-item-list {
+      .nav-item-list {
         list-style: none;
       }
 
-        .catalog-item a {
+        .nav-item a {
           font-weight: 300;
           font-size: 15px;
           line-height: 36px;
@@ -229,12 +229,12 @@ a {
           color: black;
         }
 
-        .catalog-item a:hover,
-        .catalog-item a:focus {
+        .nav-item a:hover,
+        .nav-item a:focus {
           opacity: 0.6;
         }
 
-        .catalog-item a:active {
+        .nav-item a:active {
           opacity: 0.3;
         }
 
