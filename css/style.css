@@ -598,7 +598,38 @@ a {
     opacity: 1;
   }
 
+.catalog-list {
+  list-style: none;
+}
 
+  .catalog-item-title a {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+  }
+
+  .item-price > span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: #464646;
+  }
+
+  .compare-btn {
+    font-size: 13px;
+    line-height: 36px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .compare-btn:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  .compare-btn:active {
+    color: rgba(0, 0, 0, 0.2);
+  }
 
 .paginator {
   list-style: none;
