@@ -597,3 +597,47 @@ a {
   .triangle-current:hover {
     opacity: 1;
   }
+
+
+
+.paginator {
+  list-style: none;
+
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+  .paginator-item a {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .paginator-item a:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .paginator-item a:active {
+    color: rgb(0, 0, 0);
+  }
+
+  .paginator-current a {
+    color: rgb(0, 0, 0);
+  }
+
+  .paginator-previous a,
+  .paginator-next a {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+  }
+
+  .paginator-previous a:hover,
+  .paginator-next a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(217,217,217);
+  }
+
+  .paginator-previous a:active,
+  .paginator-next a:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(217,217,217);
+  }
