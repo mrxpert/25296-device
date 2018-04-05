@@ -546,3 +546,54 @@ a {
     font-family: 'Opensans', 'Tahoma', sans-serif;
   }
 
+.sorting-bar {
+  background-color: #ebebeb;
+}
+
+  .sorting-bar-title {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .sorting-bar ul {
+    list-style: none;
+  }
+
+  .sorting-bar a {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .sorting-bar a:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .sorting-bar a:active {
+    color: rgb(0, 0, 0);
+  }
+
+  .sorting-current a,
+  .sorting-current a:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  .triangle {
+    opacity: 0.2;
+  }
+
+  .triangle:hover {
+    opacity: 0.4;
+  }
+
+  .triangle:active {
+    opacity: 1;
+  }
+
+
+  .triangle-current,
+  .triangle-current:hover {
+    opacity: 1;
+  }
