@@ -101,6 +101,10 @@ a {
   background-color: #f0c52e;
 }
 
+.page-header {
+  padding: 0 20px;
+}
+
 /* main-logo styles here */
 .main-logo[href="index.html"]:hover,
 .footer-logo[href="index.html"]:hover {
@@ -113,6 +117,12 @@ a {
 }
 
 .user-nav {
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0 60px;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 36px;
@@ -136,8 +146,46 @@ a {
   }
 
   .site-search-bar {
+    flex-basis: 440px;
+
+    margin-right: 100px;
+    padding-left: 20px;
+
     background-color: #f7e296;
   }
+
+/* user-panel styles */
+
+.user-sign-in {
+  flex-basis: 260px;
+
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+.user-logged {
+  flex-basis: 260px;
+
+  margin-right: 20px;
+}
+
+  .user-name {
+    margin-right: 20px;
+    padding-left: 20px;
+  }
+
+.compare-items {
+  flex-basis: 100px;
+
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+.cart {
+  flex-basis: 100px;
+
+  padding-left: 20px;
+}
 
 /* search-form styles here */
 
