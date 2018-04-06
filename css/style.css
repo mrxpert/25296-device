@@ -39,6 +39,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -46,6 +47,11 @@ body {
   font-family: 'Gilroy', 'Tahoma', sans-serif;
   color: black;
   background-color: white;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 img {
