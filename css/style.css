@@ -52,6 +52,7 @@ body {
 .wrapper {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 img {
@@ -102,10 +103,13 @@ a {
 }
 
 .page-header {
-  padding: 0 20px;
 }
 
 /* main-logo styles here */
+.main-logo svg {
+  margin: 20px 60px;
+}
+
 .main-logo[href="index.html"]:hover,
 .footer-logo[href="index.html"]:hover {
   opacity: 0.6;
@@ -146,10 +150,10 @@ a {
   }
 
   .site-search-bar {
-    flex-basis: 440px;
+    width: 50%;
 
-    margin-right: 100px;
-    padding-left: 20px;
+    margin-right: 20px;
+    padding-left: 40px;
 
     background-color: #f7e296;
   }
@@ -157,33 +161,30 @@ a {
 /* user-panel styles */
 
 .user-sign-in {
-  flex-basis: 260px;
-
-  margin-right: 20px;
-  padding-left: 20px;
+  margin-right: auto;
+  padding-left: 25px;
 }
 
 .user-logged {
-  flex-basis: 260px;
-
-  margin-right: 20px;
+  margin-right: auto;
 }
 
   .user-name {
     margin-right: 20px;
-    padding-left: 20px;
+    padding-left: 25px;
+  }
+
+  .user-logged .user-exit {
+    color: rgba(0, 0, 0, 0.3);
   }
 
 .compare-items {
-  flex-basis: 100px;
-
   margin-right: 20px;
   padding-left: 20px;
 }
 
 .cart {
-  flex-basis: 100px;
-
+  margin-left: 23px;
   padding-left: 20px;
 }
 
@@ -245,14 +246,43 @@ a {
   }
 
 /* main-nav styles here */
+.main-nav {
+  padding: 30px 60px 40px 60px;
+
+  background-color: #f7e296;
+}
 
   .site-nav {
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 0;
+
     list-style: none;
-    background-color: #f7e296;
+  }
+
+  .catalog-nav {
+    margin-right: 20px;
+    width: 50%;
+  }
+
+  .site-nav-item:nth-child(2) {
+    margin-right: 35px;
+  }
+
+  .site-nav-item:nth-child(3) {
+    margin-right: 35px;
+  }
+
+  .site-nav-item:last-child {
+    margin-left: auto;
+    margin-right: -4px;
   }
 
     .site-nav-item > a {
       font-size: 18px;
+      line-height: 24px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: black;
@@ -268,11 +298,29 @@ a {
         }
 
     .nav-item-groups {
+      /* uncommend after aplying JS to open this menu
+      display: flex;
+      */
+
+      margin-top: 28px;
+      margin-bottom: 32px;
+      padding: 0;
+
       list-style: none;
     }
 
+      .nav-item-groups > li {
+        margin-right: 40px;
+      }
+
       .nav-item-list {
+        padding: 0;
+
         list-style: none;
+      }
+
+      .nav-item {
+        margin-right: 20px;
       }
 
         .nav-item a {
