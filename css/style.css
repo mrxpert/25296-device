@@ -492,8 +492,18 @@ a {
   }
 
 .partners ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 94px 0 59px;
+
   list-style: none;
 }
+
+  .partners li {
+    margin-bottom: 30px;
+  }
 
 /* styles for color-overlay for partners will be here */
 
