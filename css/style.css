@@ -368,11 +368,15 @@ a {
   display: flex;
   justify-content: space-between;
 
+  margin-bottom: 55px;
+
   list-style: none;
 }
 
   .gadget-list li {
     flex-basis: 160px;
+
+    margin-bottom: 25px;
   }
 
   .gadget-card {
