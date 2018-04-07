@@ -364,35 +364,52 @@ a {
   }
 
 .gadget-list {
+  display: flex;
+  justify-content: space-between;
+
   list-style: none;
 }
 
-  .gadget-list-link {
+  .gadget-list li {
+    flex-basis: 160px;
+  }
+
+  .gadget-card {
+    display: flex;
+    flex-direction: column-reverse;
+
     font-size: 18px;
-    line-height: 36px;
+    line-height: 21px;
     color: rgb(0, 0, 0);
   }
 
-  .gadget-list-link:active {
+  .gadget-card:active {
     color: rgba(0, 0, 0, 0.3);
   }
 
-    .gadget-list-link span {
-      display: inline-block;
+    .gadget-card-link {
+
+    }
+
+    .gadget-card-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 35px;
 
       width: 160px;
       height: 160px;
-      text-align: center;
 
       background-color: rgba(240, 197, 46, 0.5);
     }
 
-    .gadget-list-link:hover > span {
+    .gadget-card:hover .gadget-card-logo {
       background-color: rgba(240, 197, 46, 1);
     }
 
-    .gadget-list-link:active .gadget-logo {
-      visibility: hidden;
+    .gadget-card:active .gadget-logo {
+      opacity: 0.3;
     }
 
 .features-slider {
