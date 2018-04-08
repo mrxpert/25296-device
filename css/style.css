@@ -600,6 +600,8 @@ a {
   .footer-user {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 35px;
   }
 
   .footer-user-navigation {
@@ -630,6 +632,9 @@ a {
   }
 
 .footer-conditions {
+  display: flex;
+  justify-content: space-between;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -637,8 +642,8 @@ a {
   color: rgb(255, 255, 255);
 }
 
-  .footer-conditions ul {
-    list-style: none;
+  .footer-conditions p {
+    margin: 0;
   }
 
   .footer-conditions a {
@@ -657,6 +662,23 @@ a {
   .footer-conditions a:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  .footer-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding-left: 0;
+
+    width: 50%;
+
+    list-style: none;
+  }
+
+    .footer-navigation li {
+      margin: 0 19px;
+    }
 
 .footer-social ul {
   list-style: none;
