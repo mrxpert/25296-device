@@ -512,39 +512,82 @@ a {
 
 /* styles for color-overlay for partners will be here */
 
-.about-us p {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  font-family: 'Opensans', 'Tahoma', sans-serif;
-  color: #464646;
+.about-us {
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px 0 60px;
 }
 
-.about-us-delivery ul {
-  list-style: none;
+.about-us-main {
+  flex-basis: 475px;
 }
 
-  .about-us-delivery a {
-    font-size: 16px;
-    line-height: 40px;
-    color: rgb(0, 0, 0);
+  .about-us h2 {
+    margin: 0;
+    margin-bottom: 43px;
   }
 
-  .about-us-delivery a:hover {
-    color: rgba(0, 0, 0, 0.6);
+  .about-us p {
+    margin-top: 0;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: #464646;
   }
 
-  .about-us-delivery a:active {
-    color: rgba(0, 0, 0, 0.3);
+  .about-us > p {
+    margin-bottom: 33px;
   }
 
-.contacts  p {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  font-family: 'Opensans', 'Tahoma', sans-serif;
-  color: #464646;
+  .about-us-delivery {
+    margin-bottom: 57px;
+  }
+
+    .about-us-delivery p {
+      margin-bottom: 60px;
+    }
+
+    .about-us-delivery ul {
+      margin: 0;
+      margin-bottom: 20px;
+
+      list-style: none;
+    }
+
+    .about-us-delivery a {
+      font-size: 16px;
+      line-height: 40px;
+      color: rgb(0, 0, 0);
+    }
+
+    .about-us-delivery a:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .about-us-delivery a:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+  .about-us .btn {
+    align-self: flex-start;
+
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+
+.about-us-contacts {
+  flex-basis: 560px;
 }
+
+  .contacts-map {
+    display: block;
+    font-size: 0;
+
+    margin-bottom: 75px;
+  }
 
 /* Footer styles */
 
