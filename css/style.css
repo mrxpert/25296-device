@@ -592,10 +592,24 @@ a {
 /* Footer styles */
 
 .page-footer {
+  padding-top: 60px;
+
   background-color: #464646;
 }
 
+  .footer-user {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .footer-user-navigation {
+    display: flex;
+
+    width: 50%;
+
+    margin: 0;
+    padding: 0;
+
     list-style: none;
   }
 
