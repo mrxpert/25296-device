@@ -680,25 +680,41 @@ a {
       margin: 0 19px;
     }
 
-.footer-social ul {
-  list-style: none;
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
 }
 
-  .social-button:hover {
+  .footer-social ul {
+    display: flex;
+
+    margin: 0 auto;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .footer-social li {
+    margin: 0 14px;
+  }
+
+    .social-button:hover {
+      opacity: 0.6;
+    }
+
+    .social-button:active {
+      opacity: 0.1;
+    }
+
+  .developer:hover {
     opacity: 0.6;
   }
 
-  .social-button:active {
-    opacity: 0.1;
+  .developer:active {
+    opacity: 0.3;
   }
-
-.developer:hover {
-  opacity: 0.6;
-}
-
-.developer:active {
-  opacity: 0.3;
-}
 
 /* modal windows styles */
 
