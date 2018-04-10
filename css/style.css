@@ -635,6 +635,8 @@ a {
   display: flex;
   justify-content: space-between;
 
+  margin-bottom: 65px;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -643,7 +645,13 @@ a {
 }
 
   .footer-conditions p {
+    width: 260px;
+
     margin: 0;
+  }
+
+  .footer-conditions p:last-child {
+    text-align: right;
   }
 
   .footer-conditions a {
@@ -668,7 +676,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
 
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0;
 
     width: 50%;
