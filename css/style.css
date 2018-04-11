@@ -780,43 +780,46 @@ a {
 
 /* catalog styles */
 
-.main-catalog h1 {
-  margin: 0;
-  margin-bottom: 26px;
-  padding-left: 60px;
+.page-header {
+  padding: 40px 60px 45px;
 }
 
-.breadcrumbs {
-  display: flex;
-
-  margin: 0;
-  padding-left: 60px;
-
-  font-size: 14px;
-  line-height: 36px;
-  font-family: 'Opensans', 'Tahoma', sans-serif;
-  color: rgba(0, 0, 0, 0.3);
-
-  list-style: none;
-}
-
-  .breadcrumbs li {
-    margin-right: 20px;
+  .main-catalog h1 {
+    margin: 0;
+    margin-bottom: 26px;
   }
 
-    .breadcrumbs a {
-      padding-right: 20px;
+  .breadcrumbs {
+    display: flex;
 
-      color: rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 36px;
+    font-family: 'Opensans', 'Tahoma', sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+
+    list-style: none;
+  }
+
+    .breadcrumbs li {
+      margin-right: 20px;
     }
 
-    .breadcrumbs a:hover {
-      color: rgba(0, 0, 0, 0.6);
-    }
+      .breadcrumbs a {
+        padding-right: 20px;
 
-    .breadcrumbs a:active {
-      color: rgba(0, 0, 0, 0.1);
-    }
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      .breadcrumbs a:hover {
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .breadcrumbs a:active {
+        color: rgba(0, 0, 0, 0.1);
+      }
 
 .filters h3 {
   font-size: 16px;
