@@ -784,7 +784,18 @@ a {
 
 /* catalog styles */
 
+.main-catalog h1 {
+  margin: 0;
+  margin-bottom: 26px;
+  padding-left: 60px;
+}
+
 .breadcrumbs {
+  display: flex;
+
+  margin: 0;
+  padding-left: 60px;
+
   font-size: 14px;
   line-height: 36px;
   font-family: 'Opensans', 'Tahoma', sans-serif;
@@ -793,17 +804,23 @@ a {
   list-style: none;
 }
 
-  .breadcrumbs a {
-    color: rgba(0, 0, 0, 0.3);
+  .breadcrumbs li {
+    margin-right: 20px;
   }
 
-  .breadcrumbs a:hover {
-    color: rgba(0, 0, 0, 0.6);
-  }
+    .breadcrumbs a {
+      padding-right: 20px;
 
-  .breadcrumbs a:active {
-    color: rgba(0, 0, 0, 0.1);
-  }
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    .breadcrumbs a:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .breadcrumbs a:active {
+      color: rgba(0, 0, 0, 0.1);
+    }
 
 .filters h3 {
   font-size: 16px;
