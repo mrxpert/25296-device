@@ -698,14 +698,18 @@ a {
   .footer-social ul {
     display: flex;
 
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     padding: 0;
 
     list-style: none;
   }
 
   .footer-social li {
-    margin: 0 14px;
+    margin: 0 14px 10px 14px;
+  }
+
+  .footer-social li:first-child {
+    padding-left: 26px;
   }
 
     .social-button:hover {
