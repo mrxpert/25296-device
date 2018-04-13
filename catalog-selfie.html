@@ -82,9 +82,9 @@
     </header>
 
 
-    <main class="main-catalog wrapper">
+    <main class="main-catalog">
 
-      <header class="page-header">
+      <header class="page-header wrapper">
         <h1 class="title">Моноподы для селфи</h1>
 
         <ul class="breadcrumbs">
@@ -98,159 +98,190 @@
         </ul>
       </header>
 
-      <section class="filters">
-        <h3>Фильтр:</h3>
-        <form class="filter-form" action="#" method="post">
-          <fieldset class="filter-price">
-            <legend>Стоимость</legend>
-            <!-- Здесь будут ползунки -->
-          </fieldset>
-          <fieldset class="filter-color">
-            <legend>Цвет</legend>
-            <label for="color-black">Черный</label>
-            <input type="checkbox" id="color-black" name="color-black" checked>
-            <label for="color-white">Белый</label>
-            <input type="checkbox" id="color-white" name="color-white">
-            <label for="color-blue">Синий</label>
-            <input type="checkbox" id="color-blue" name="color-blue" checked>
-            <label for="color-red">Красный</label>
-            <input type="checkbox" id="color-red" name="color-red" checked>
-            <label for="color-pink">Розовый</label>
-            <input type="checkbox" id="color-pink" name="color-pink">
-          </fieldset>
-          <fieldset class="filter-bluetooth">
-            <legend>Bluetooth</legend>
-            <label for="bluetooth-on">Есть</label>
-            <input type="radio" id="bluetooth-on" name="bluetooth" checked>
-            <label for="bluetooth-off">Нет</label>
-            <input type="radio" id="bluetooth-off" name="bluetooth">
-          </fieldset>
-          <button class="btn" type="submit">Показать</button>
-        </form>
-      </section>
-
       <section class="catalog">
-        <h2 class="visually-hidden">Список моноподов для селфи</h2>
 
-        <section class="sorting-bar">
-          <div class="sorting-bar-title">Сортировка:</div>
-          <ul>
-            <li class="sorting-current">
-              <a>По цене</a>
-            </li>
-            <li>
-              <a href="#">По типу</a>
-            </li>
-            <li>
-              <a href="#">По популярности</a>
-            </li>
-            <li>
-              <div class="sort-triangles">
-                <a href="#" class="triangle triangle-up">
-                  <span class="visually-hidden">По возрастанию</span>
-                  <span class="triangle-up-icon" aria-hidden="true">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                      <title>Иконка сортировки по возрастанию</title>
-                      <polygon fill="#231F20" points="5.5,0 0,10 11,10 "></polygon>
-                    </svg>
-                  </span>
-                </a>
-                <a class="triangle triangle-down triangle-current">
-                  <span class="visually-hidden">По убыванию</span>
-                  <span class="triangle-down-icon" aria-hidden="true">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                      <title>Иконка сортировки по убыванию</title>
-                      <polyline fill="#231F20" points="5.5,10 0,0 11,0 "></polyline>
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </li>
-          </ul>
+        <section class="catalog-filters">
+
+          <div class="filter-wrapper">
+            <h3>Фильтр:</h3>
+            <form class="filter-form" action="#" method="post">
+              <fieldset class="filter-price">
+                <legend>Стоимость</legend>
+                <!-- Здесь будут ползунки -->
+              </fieldset>
+              <fieldset class="filter-color">
+                <legend>Цвет</legend>
+                <ul class="filter-color-list">
+                  <li>
+                    <label for="color-black">Черный</label>
+                    <input type="checkbox" id="color-black" name="color-black" checked>
+                  </li>
+                  <li>
+                    <label for="color-white">Белый</label>
+                    <input type="checkbox" id="color-white" name="color-white">
+                  </li>
+                  <li>
+                    <label for="color-blue">Синий</label>
+                    <input type="checkbox" id="color-blue" name="color-blue" checked>
+                  </li>
+                  <li>
+                    <label for="color-red">Красный</label>
+                    <input type="checkbox" id="color-red" name="color-red" checked>
+                  </li>
+                  <li>
+                    <label for="color-pink">Розовый</label>
+                    <input type="checkbox" id="color-pink" name="color-pink">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-bluetooth">
+                <legend>Bluetooth</legend>
+                <ul class="filter-bluetooth-list">
+                  <li>
+                    <label for="bluetooth-on">Есть</label>
+                    <input type="radio" id="bluetooth-on" name="bluetooth" checked>
+                  </li>
+                  <li>
+                    <label for="bluetooth-off">Нет</label>
+                    <input type="radio" id="bluetooth-off" name="bluetooth">
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="btn" type="submit">Показать</button>
+            </form>
+          </div>
+
         </section>
 
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3 class="catalog-item-title">
-              <a href="#">Любительская селфи-палка</a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="#">
-                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              </a>
-            </p>
-            <p class="item-price">
-              <span>500 руб.</span>
-              <a href="#" class="to-cart-btn btn">В корзину</a>
-              <a href="#" class="compare-btn">Добавить к сравнению</a>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3 class="catalog-item-title">
-              <a href="#">Профессиональная селфи-палка</a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="#">
-                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              </a>
-            </p>
-            <p class="item-price">
-              <span>1500 руб.</span>
-              <a href="#" class="to-cart-btn btn">В корзину</a>
-              <a href="#" class="compare-btn">Добавить к сравнению</a>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3 class="catalog-item-title">
-              <a href="#">Непотопляемая селфи-палка</a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="#">
-                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              </a>
-            </p>
-            <p class="item-price">
-              <span>2500 руб.</span>
-              <a href="#" class="to-cart-btn btn">В корзину</a>
-              <a href="#" class="compare-btn">Добавить к сравнению</a>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3 class="catalog-item-title">
-              <a href="#">Селфи-палка «Следуй за мной»</a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="#">
-                <span class="new-item-mark">New</span>
-                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-              </a>
-            </p>
-            <p class="item-price">
-              <span>4900 руб.</span>
-              <a href="#" class="to-cart-btn btn">В корзину</a>
-              <a href="#" class="compare-btn">Добавить к сравнению</a>
-            </p>
-          </li>
-        </ul>
+        <section class="catalog-items">
 
-        <ul class="paginator">
-          <li class="paginator-item paginator-previous">
-            <a href="#">Назад</a>
-          </li>
-          <li class="paginator-item paginator-current">
-            <a>1</a>
-          </li>
-          <li class="paginator-item">
-            <a href="#">2</a>
-          </li>
-          <li class="paginator-item">
-            <a href="#">3</a>
-          </li>
-          <li class="paginator-item paginator-next">
-            <a href="#">Вперед</a>
-          </li>
-        </ul>
+          <div class="catalog-items-wrapper">
+            <h2 class="visually-hidden">Список моноподов для селфи</h2>
+
+            <section class="sorting-bar">
+              <div class="sorting-bar-title">Сортировка:</div>
+              <ul>
+                <li class="sorting-current">
+                  <a>По цене</a>
+                </li>
+                <li>
+                  <a href="#">По типу</a>
+                </li>
+                <li>
+                  <a href="#">По популярности</a>
+                </li>
+                <li>
+                  <div class="sort-triangles">
+                    <a href="#" class="triangle triangle-up">
+                      <span class="visually-hidden">По возрастанию</span>
+                      <span class="triangle-up-icon" aria-hidden="true">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                          <title>Иконка сортировки по возрастанию</title>
+                          <polygon fill="#231F20" points="5.5,0 0,10 11,10 "></polygon>
+                        </svg>
+                      </span>
+                    </a>
+                    <a class="triangle triangle-down triangle-current">
+                      <span class="visually-hidden">По убыванию</span>
+                      <span class="triangle-down-icon" aria-hidden="true">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                          <title>Иконка сортировки по убыванию</title>
+                          <polyline fill="#231F20" points="5.5,10 0,0 11,0 "></polyline>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </section>
+
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <h3 class="catalog-item-title">
+                  <a href="#">Любительская селфи-палка</a>
+                </h3>
+                <p class="catalog-item-image">
+                  <a href="#">
+                    <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  </a>
+                </p>
+                <span class="item-price">500 руб.</span>
+                <p class="item-add">
+                  <a href="#" class="to-cart-btn btn">В корзину</a>
+                  <a href="#" class="compare-btn">Добавить к сравнению</a>
+                </p>
+              </li>
+              <li class="catalog-item">
+                <h3 class="catalog-item-title">
+                  <a href="#">Профессиональная селфи‑палка</a>
+                </h3>
+                <p class="catalog-item-image">
+                  <a href="#">
+                    <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                  </a>
+                </p>
+                <span class="item-price">1500 руб.</span>
+                <p class="item-add">
+                  <a href="#" class="to-cart-btn btn">В корзину</a>
+                  <a href="#" class="compare-btn">Добавить к сравнению</a>
+                </p>
+              </li>
+              <li class="catalog-item">
+                <h3 class="catalog-item-title">
+                  <a href="#">Непотопляемая селфи-палка</a>
+                </h3>
+                <p class="catalog-item-image">
+                  <a href="#">
+                    <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  </a>
+                </p>
+                <span class="item-price">2500 руб.</span>
+                <p class="item-add">
+                  <a href="#" class="to-cart-btn btn">В корзину</a>
+                  <a href="#" class="compare-btn">Добавить к сравнению</a>
+                </p>
+              </li>
+              <li class="catalog-item">
+                <h3 class="catalog-item-title">
+                  <a href="#">Селфи-палка «Следуй за мной»</a>
+                </h3>
+                <p class="catalog-item-image">
+                  <a href="#">
+                    <span class="new-item-mark">New</span>
+                    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                  </a>
+                </p>
+                <span class="item-price">4900 руб.</span>
+                <p class="item-add">
+                  <a href="#" class="to-cart-btn btn">В корзину</a>
+                  <a href="#" class="compare-btn">Добавить к сравнению</a>
+                </p>
+              </li>
+            </ul>
+
+            <ul class="paginator">
+              <li class="paginator-item paginator-previous">
+                <a href="#">Назад</a>
+              </li>
+              <li class="paginator-item paginator-current">
+                <a>1</a>
+              </li>
+              <li class="paginator-item">
+                <a href="#">2</a>
+              </li>
+              <li class="paginator-item">
+                <a href="#">3</a>
+              </li>
+              <li class="paginator-item paginator-next">
+                <a href="#">Вперед</a>
+              </li>
+            </ul>
+          </div>
+
+        </section>
+
       </section>
+
     </main>
 
     <footer class="page-footer">
