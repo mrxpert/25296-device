@@ -154,6 +154,8 @@ a {
   }
 
   .site-search-bar {
+    position: relative;
+
     width: 50%;
 
     margin-right: 20px;
@@ -161,6 +163,19 @@ a {
 
     background-color: #f7e296;
   }
+
+    .site-search-bar::before {
+      content: '';
+
+      position: absolute;
+      top: 12px;
+      left: 0;
+
+      width: 16px;
+      height: 16px;
+
+      background: 0 0 url('../img/search.svg') no-repeat;
+    }
 
 /* user-panel styles */
 
