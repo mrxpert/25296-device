@@ -180,13 +180,31 @@ a {
 /* user-panel styles */
 
 .user-sign-in {
+  position: relative;
+
   margin-right: auto;
   padding-left: 25px;
 }
 
 .user-logged {
+  position: relative;
+
   margin-right: auto;
 }
+
+  .user-sign-in::before,
+  .user-logged::before {
+    content: '';
+
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    width: 13px;
+    height: 12px;
+
+    background: 0 0 url('../img/user.svg') no-repeat;
+  }
 
   .user-name {
     margin-right: 20px;
