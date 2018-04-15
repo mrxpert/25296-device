@@ -189,7 +189,7 @@ a {
 .user-logged {
   position: relative;
 
-  margin-right: auto;
+  margin: 0 auto;
 }
 
   .user-login-link::before,
@@ -671,6 +671,7 @@ a {
 
 .page-footer {
   padding-top: 60px;
+  padding-bottom: 66px;
 
   background-color: #464646;
 }
@@ -721,6 +722,10 @@ a {
     .footer-user-nav .user-name:hover::before {
       opacity: 0.6;
     }
+
+  .footer-user-nav .user-exit {
+      color: rgba(255,255,255, 0.3);
+  }
 
     .footer-user-nav .compare-link::before {
       content: '';
@@ -823,23 +828,37 @@ a {
     }
 
 .footer-social {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
+}
 
-  margin-bottom: 30px;
+.footer-social::before {
+  position: absolute;
+
+  content: '';
+  top: 50%;
+  margin-top: -4px;
+  display: block;
+
+  width: 80px;
+  height: 7px;
+
+  background: #ffc600;
 }
 
   .footer-social ul {
     display: flex;
 
-    margin: 0 auto 50px auto;
+    margin: 0 auto;
     padding: 0;
 
     list-style: none;
   }
 
   .footer-social li {
-    margin: 0 14px 10px 14px;
+    margin: 0 14px;
   }
 
   .footer-social li:first-child {
