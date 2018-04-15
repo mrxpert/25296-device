@@ -335,6 +335,20 @@ a {
     width: 50%;
   }
 
+    .catalog-nav a::after {
+      content: '';
+
+      position: absolute;
+      top: 3px;
+      right: -26px;
+
+      width: 16px;
+      height: 16px;
+
+      opacity: 0.3;
+      background: 0 0 url('../img/plus.svg') no-repeat;
+    }
+
   .site-nav-item:nth-child(2) {
     margin-right: 35px;
   }
@@ -349,6 +363,8 @@ a {
   }
 
     .site-nav-item > a {
+      position: relative;
+
       font-size: 18px;
       line-height: 24px;
       letter-spacing: 0.2em;
