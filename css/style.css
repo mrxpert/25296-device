@@ -237,9 +237,24 @@ a {
 
 
 .cart {
+  position: relative;
+
   margin-left: 23px;
   padding-left: 20px;
 }
+
+  .cart::before {
+    content: '';
+
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+    width: 12px;
+    height: 12px;
+
+    background: 0 0 url('../img/cart.svg') no-repeat;
+  }
 
 /* search-form styles here */
 
