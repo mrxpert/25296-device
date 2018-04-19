@@ -84,11 +84,15 @@ a {
 }
 
 .btn {
-  padding-left: 10px;
+  position: relative;
+  z-index: 1;
+
+  padding: 0;
+  padding-left: 3px;
 
   font-weight: 800;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 40px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
@@ -98,6 +102,21 @@ a {
   border: none;
   cursor: pointer;
   outline: 0;
+}
+
+.btn::before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
+  z-index: -5;
+
+  height: 8px;
+
+  background: #f0c52e;
 }
 
 .btn:hover,
@@ -556,6 +575,8 @@ a {
     }
 
 .features-slider-controls {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -565,14 +586,25 @@ a {
 
   .features-slider-controls .btn {
     margin-bottom: 24px;
+
+    width: 160px;
   }
 
   .btn.feature-slide-active,
   .btn.feature-slide-active:hover,
   .btn.feature-slide-active:active {
-    color: #f7e184;
+    padding-left: 25px;
+    width: 280px;
 
+    text-align: left;
+    color: #f7e184;
     background-color: black;
+    cursor: default;
+  }
+
+  .btn.feature-slide-active::before {
+    display: none;
+
   }
 
 .partners ul {
@@ -655,6 +687,8 @@ a {
 
     margin-top: auto;
     margin-bottom: 20px;
+
+    width: 260px;
   }
 
 .about-us-contacts {
