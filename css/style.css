@@ -521,10 +521,14 @@ a {
     }
 
 .features {
-  background-color: #e5e5e5;
+  padding-bottom: 70px;
+
+  background-image: linear-gradient(#fff 100px, #e5e5e5 100px);
 }
 
 .features-slider {
+  position: relative;
+
   display: flex;
   flex-direction: row-reverse;
 }
@@ -539,32 +543,34 @@ a {
   }
 
   .features-slider li {
-    margin-left: 117px;
-    margin-bottom: 80px;
-
+    padding: 74px 0 77px 117px;
     min-height: 195px;
   }
 
   .features-slider li:first-child {
-    background: url('../img/delivery.svg') 100% no-repeat;
+    background: url('../img/delivery.svg') 91% 55% no-repeat;
   }
 
   .features-slider li:nth-child(2) {
     display: none; /* prep-s to build js slider */
-    background: url('../img/warranty.svg') 100% no-repeat;
+    background: url('../img/warranty.svg')  94% no-repeat;
   }
 
   .features-slider li:last-child {
     display: none; /* prep-s to build js slider */
-    background: url('../img/credit.svg') 100% no-repeat;
+    background: url('../img/credit.svg') 90%  47% no-repeat;
   }
 
     .features-slider h3 {
       margin: 0;
-      margin-bottom: 23px;
+      margin-bottom: 30px;
+
+      line-height: 48px;
+      letter-spacing: 0.02em;
     }
 
     .features-slider p {
+      margin-bottom: 0;
       width: 445px;
 
       font-weight: 300;
@@ -581,7 +587,21 @@ a {
   flex-direction: column;
   align-items: flex-start;
 
+  padding-top: 80px;
+  padding-bottom: 47px;
   width: 280px;
+}
+
+.features-slider-controls::after {
+  content: '';
+
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: -4px;
+  width: 7px;
+
+  background: black;
 }
 
   .features-slider-controls .btn {
