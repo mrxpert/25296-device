@@ -129,9 +129,35 @@ a {
   background-color: #f0c52e;
 }
 
-/* main-logo styles here */
-.main-logo svg {
-  margin: 20px 60px;
+.main-nav {
+  padding:  21px 60px 40px 60px;
+
+  background-color: #f7e296;
+}
+
+.main-nav::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  height: 40px;
+
+  background-color: white;
+}
+
+.main-logo {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 0;
 }
 
 .main-logo[href="index.html"]:hover,
@@ -149,7 +175,8 @@ a {
   justify-content: flex-start;
 
   margin: 0;
-  padding: 0 60px;
+  margin-bottom: 30px;
+  padding: 0;
 
   font-weight: 300;
   font-size: 15px;
@@ -332,13 +359,6 @@ a {
 
     clip: auto;
   }
-
-/* main-nav styles here */
-.main-nav {
-  padding: 30px 60px 40px 60px;
-
-  background-color: #f7e296;
-}
 
   .site-nav {
     display: flex;
