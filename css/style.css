@@ -1354,8 +1354,6 @@ a {
 .sorting-bar {
   display: flex;
   align-items: center;
-
-  padding: 25px 0;
 }
 
   .sorting-bar-title {
@@ -1384,10 +1382,16 @@ a {
   }
 
   .sorting-bar li:last-child {
+    display: flex;
+
     margin-left: auto;
   }
 
   .sorting-bar a {
+    display: inline-block;
+
+    padding: 25px 0;
+
     font-size: 14px;
     line-height: 18px;
     font-family: 'Opensans', 'Tahoma', sans-serif;
@@ -1407,8 +1411,29 @@ a {
     color: rgb(0, 0, 0);
   }
 
-  .triangle {
+.sort-triangles {
+  display: flex;
+  align-items: center;
+}
+
+  .sort-triangles .triangle {
+    padding: 0;
+    width: 0;
+
+    border: 10px solid transparent;
+    border-top-width: 0;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    border-bottom-color: black;
     opacity: 0.2;
+  }
+
+  .sort-triangles .triangle-current,
+  .sort-triangles .triangle-current:hover {
+    margin-left: 20px;
+
+    transform: rotate(180deg);
+    opacity: 1;
   }
 
   .triangle:hover {
@@ -1416,12 +1441,6 @@ a {
   }
 
   .triangle:active {
-    opacity: 1;
-  }
-
-
-  .triangle-current,
-  .triangle-current:hover {
     opacity: 1;
   }
 
