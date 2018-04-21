@@ -1063,8 +1063,28 @@ a {
   }
 
     .breadcrumbs li {
+      position: relative;
+
       margin-right: 20px;
     }
+
+.breadcrumbs li:not(:last-child)::after {
+  position: absolute;
+  right: -1px;
+  top: 50%;
+
+  content: '';
+  box-sizing: content-box;
+
+  width: 5px;
+  height: 5px;
+  margin-top: -2px;
+
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
       .breadcrumbs a {
         padding-right: 20px;
