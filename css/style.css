@@ -1092,11 +1092,22 @@ a {
 }
 
 .catalog-filters {
+  position: relative;
+
   flex-grow: 1;
 
   background-color: #efefef;
 }
 
+.catalog-filters::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 70px;
+
+  opacity: 0.08;
+  background: black;
+}
 .catalog-filters h3 {
   margin: 0;
   padding: 25px 0;
@@ -1315,7 +1326,21 @@ a {
     }
 
 .catalog-items {
+  position: relative;
+
   flex-grow: 1;
+}
+
+.catalog-items::before {
+  position: absolute;
+
+  content: '';
+  width: 100%;
+  height: 70px;
+
+  opacity: 0.08;
+  background: black;
+  z-index: -1;
 }
 
 .catalog-items-wrapper {
