@@ -191,6 +191,7 @@ a {
   .user-nav a {
     display: inline-block;
 
+    vertical-align: top;
     padding-top: 7px;
     padding-bottom: 7px;
 
@@ -1450,6 +1451,7 @@ a {
   .sorting-bar a {
     display: inline-block;
 
+    vertical-align: top;
     padding: 25px 0;
 
     font-size: 14px;
