@@ -637,6 +637,38 @@ a {
     line-height: 42px;
   }
 
+.main-slider-bullets {
+  position: absolute;
+  bottom: 157px;
+  right: 100px;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 220px;
+}
+
+#btn-1:checked ~ .main-slider-bullets label[for="btn-1"],
+#btn-2:checked ~ .main-slider-bullets label[for="btn-2"],
+#btn-3:checked ~ .main-slider-bullets label[for="btn-3"] {
+  box-shadow: inset 0 0 0 1px black, 0 0 0 1px black;
+}
+
+.main-slider-bullets label {
+  display: block;
+  box-sizing: border-box;
+
+  margin-left: 20px;
+  margin-bottom: 5px;
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 1px black;
+  cursor: pointer;
+}
+
 .gadget-list {
   display: flex;
   justify-content: space-between;
