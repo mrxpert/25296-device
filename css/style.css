@@ -250,11 +250,19 @@ a {
         opacity: 1; /* Firefox */
       }
 
-      .search-request:-ms-input-placeholder,
-      .search-request::-ms-input-placeholder {
+      .search-request::-webkit-input-placeholder {
+        color: black;
+        opacity: 1; /* Firefox */
+      }
+
+
+      .search-request:-ms-input-placeholder {
         color: black;
       }
 
+      .search-request::-ms-input-placeholder {
+        color: black;
+      }
 
       .search-request:hover {
         opacity: 0.6;
@@ -1154,58 +1162,132 @@ a {
   }
 
 /* modal windows styles */
+.modal {
+  z-index: 9999;
+
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
 
 .modal-feedback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  padding: 95px 100px 80px;
+  width: 960px;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+
   font-size: 18px;
   line-height: 24px;
+
+  background: white;
 }
 
-  .feedback-form input {
-    font-size: 14px;
-    line-height: 18px;
-    font-family: 'Opensans', 'Tahoma', sans-serif;
-    color: #464646;
-
-    background-color: #f2f2f2;
+  .feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .feedback-form input:hover,
-  .feedback-form textarea:hover {
-    background-color: #eaeaea;
+    .feedback-form p {
+      margin: 0;
+      margin-bottom: 35px;
+      width: 360px;
+    }
+
+      .feedback-form label {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      .feedback-form input,
+      .feedback-form textarea {
+        padding: 16px 20px;
+        width: 360px;
+
+        font-size: 14px;
+        line-height: 18px;
+        font-family: 'Opensans', 'Tahoma', sans-serif;
+        color: #464646;
+
+        border: none;
+        background-color: #f2f2f2;
+        resize: none;
+      }
+
+      .feedback-form input:hover,
+      .feedback-form textarea:hover {
+        background-color: #eaeaea;
+      }
+
+      .feedback-form input:focus,
+      .feedback-form textarea:focus {
+        padding: 13px 17px;
+
+        border: 3px solid #f7e296;
+        background-color: transparent;
+        outline: none;
+      }
+
+      .feedback-form input:invalid:not(:placeholder-shown):not(:focus) {
+        background-color: #f6dada;
+      }
+
+      .feedback-form input::placeholder,
+      .feedback-form textarea::placeholder {
+        color: rgba(70, 70, 70, 0.4);
+      }
+
+      .feedback-form input::-webkit-input-placeholder,
+      .feedback-form textarea::-webkit-input-placeholder {
+        color: rgba(70, 70, 70, 0.4);
+        opacity: 1; /* Firefox */
+      }
+
+      .feedback-form input:-ms-input-placeholder,
+      .feedback-form textarea:-ms-input-placeholder {
+        color: rgba(70, 70, 70, 0.4);
+      }
+
+      .feedback-form input::-ms-input-placeholder,
+      .feedback-form textarea::-ms-input-placeholder {
+        color: rgba(70, 70, 70, 0.4);
+      }
+
+    .feedback-form .feedback-text,
+    .feedback-text textarea {
+      width: 100%;
+    }
+
+    .feedback-form .btn {
+      margin-top: 6px;
+      width: 200px;
+    }
+
+  .modal-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+
+    order: 1;
+
+    background-color: transparent;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
   }
 
-  .feedback-form input:focus,
-  .feedback-form textarea:focus {
-    background-color: #f7e296;
+  .modal-close:hover,
+  .modal-close:focus {
+    opacity: 1;
+    outline-color: #f7e296;
   }
 
-  /* not working properly
-  .feedback-form input:invalid,
-  .feedback-form textarea:invalid {
-    background-color: #f6dada;
+  .modal-close:active {
+    opacity: 0.3;
+    outline: none;
   }
-  */
-
-  .feedback-form input::placeholder,
-  .feedback-form textarea::placeholder {
-    color: rgba(70, 70, 70, 0.4);
-  }
-
-  .feedback-form textarea {
-    font-size: 14px;
-    line-height: 18px;
-    font-family: 'Opensans', 'Tahoma', sans-serif;
-    color: #464646;
-
-    background-color: #f2f2f2;
-  }
-
-.modal-close {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 /* catalog styles */
 
 .page-header {

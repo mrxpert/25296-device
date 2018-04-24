@@ -495,24 +495,20 @@
 
     </footer>
 
-    <section class="modal modal-feedback">
+    <section class="modal modal-feedback" hidden>
       <h2 class="visually-hidden">Напишите нам</h2>
-      <!-- Здесь будет форма -->
       <form class="feedback-form" action="#" method="get">
-        <p class="feedback-text">
-          <label>Ваше имя:
-            <input type="text" name="feedback-name" placeholder="Представьтесь, пожалуйста" required>
-          </label>
+        <p class="feedback-author">
+          <label for="feedback-name">Ваше имя:</label>
+          <input type="text" name="feedback-name" id="feedback-name" placeholder="Представьтесь, пожалуйста" required>
         </p>
         <p class="feedback-email">
-          <label>Ваш e-mail:
-            <input type="email" name="feedback-mail" placeholder="Для отправки ответа" required>
-          </label>
+          <label for="feedback-mail">Ваш e-mail:</label>
+          <input type="email" name="feedback-mail" id="feedback-mail" placeholder="Для отправки ответа" required>
         </p>
         <p class="feedback-text">
-          <label>Текст письма:
-            <textarea name="feedback-text" placeholder="В свободной форме" required></textarea>
-          </label>
+          <label for="feedback-text">Текст письма:</label>
+          <textarea rows="7" name="feedback-text" id="feedback-text" placeholder="В свободной форме" required></textarea>
         </p>
         <button class="btn" type="submit">Отправить</button>
       </form>
