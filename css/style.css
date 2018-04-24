@@ -1265,6 +1265,17 @@ a {
       width: 200px;
     }
 
+.modal-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 960px;
+  height: 560px;
+}
+
   .modal-close {
     position: absolute;
     top: 22px;
@@ -1288,6 +1299,7 @@ a {
     opacity: 0.3;
     outline: none;
   }
+
 /* catalog styles */
 
 .page-header {
