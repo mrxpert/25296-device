@@ -347,15 +347,18 @@ a {
   margin-right: auto;
 }
 
+  .user-login-link {
+    max-width: 180px;
+  }
+
   .user-login-link::before,
   .user-nav .user-name::before {
     content: '';
 
     position: absolute;
-    top: 50%;
+    top: 19px;
     left: 0;
 
-    margin-top: -6px;
     width: 13px;
     height: 12px;
 
@@ -365,9 +368,12 @@ a {
   .user-name {
     margin-right: 20px;
     padding-left: 25px;
+    max-width: 180px;
   }
 
   .user-logged .user-exit {
+    max-width: 80px;
+
     color: rgba(0, 0, 0, 0.3);
   }
 
@@ -378,14 +384,17 @@ a {
   padding-left: 20px;
 }
 
+  .compare-link {
+    max-width: 80px;
+  }
+
   .user-nav .compare-link::before {
     content: '';
 
     position: absolute;
-    top: 50%;
+    top: 19px;
     left: 0;
 
-    margin-top: -5px;
     width: 10px;
     height: 10px;
 
@@ -399,14 +408,17 @@ a {
   padding-left: 20px;
 }
 
+  .cart-link {
+    max-width: 70px;
+  }
+
   .user-nav .cart-link::before {
     content: '';
 
     position: absolute;
-    top: 50%;
+    top: 19px;
     left: 0;
 
-    margin-top: -6px;
     width: 12px;
     height: 12px;
 
@@ -442,13 +454,9 @@ a {
       background: 0 0 url('../img/plus.svg') no-repeat;
     }
 
-  .site-nav-item:nth-child(2) {
-    margin-right: 35px;
-  }
-
-  .site-nav-item:nth-child(3) {
-    margin-right: 35px;
-  }
+.site-nav-item:not(.catalog-nav) {
+  margin-right: 35px;
+}
 
   .site-nav-item:last-child {
     margin-left: auto;
@@ -458,11 +466,18 @@ a {
     .site-nav-item > a {
       position: relative;
 
+      display: inline-block;
+
       font-size: 18px;
       line-height: 24px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: black;
+    }
+
+    .site-nav-item:not(.catalog-nav) a {
+      max-width: 147px;
+      word-wrap: break-word;
     }
 
     .site-nav-item > a:hover,
@@ -1063,6 +1078,13 @@ a {
     .footer-nav li {
       margin: 0 19px;
     }
+
+      .footer-nav a {
+        display: inline-block;
+        max-width: 147px;
+
+        word-wrap: break-word;
+      }
 
 .footer-social {
   position: relative;
