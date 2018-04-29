@@ -1774,7 +1774,23 @@ a {
     }
 
       .new-item-mark {
-        display: none;
+        position: absolute;
+        right: 29px;
+        top: 27px;
+
+        padding: 21px 0;
+        width: 60px;
+        height: 60px;
+
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        vertical-align: center;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.2);
+
+        border: 2px solid rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
       }
 
     .catalog-item-title {
