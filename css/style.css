@@ -866,7 +866,17 @@ a {
     margin-bottom: 30px;
   }
 
-/* styles for color-overlay for partners will be here */
+    .partners img {
+      opacity: 0.2;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+    }
+
+    .partners img:hover {
+      opacity: 1;
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+    }
 
 .about-us {
   position: relative;
