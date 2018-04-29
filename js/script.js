@@ -1,3 +1,30 @@
+/* main-slider */
+var toggle_1 = document.querySelector("#btn-1");
+var toggle_2 = document.querySelector("#btn-2");
+var toggle_3 = document.querySelector("#btn-3");
+
+var slide_1 = document.querySelector("#slide_1");
+var slide_2 = document.querySelector("#slide_2");
+var slide_3 = document.querySelector("#slide_3");
+
+toggle_2.addEventListener("click", function (evt) {
+  slide_2.classList.remove("visually-hidden");
+  slide_1.classList.add("visually-hidden");
+  slide_3.classList.add("visually-hidden");
+});
+
+toggle_1.addEventListener("click", function (evt) {
+  slide_1.classList.remove("visually-hidden");
+  slide_2.classList.add("visually-hidden");
+  slide_3.classList.add("visually-hidden");
+});
+
+toggle_3.addEventListener("click", function (evt) {
+  slide_3.classList.remove("visually-hidden");
+  slide_2.classList.add("visually-hidden");
+  slide_1.classList.add("visually-hidden");
+});
+
 var catalog_link = document.querySelector(".catalog-link");
 
 var catalog_list = document.querySelector(".nav-item-groups");
