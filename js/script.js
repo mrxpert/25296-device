@@ -1,3 +1,24 @@
+var catalog_link = document.querySelector(".catalog-link");
+
+var catalog_list = document.querySelector(".nav-item-groups");
+
+function toggleCatalog() {
+  var displaySetting = catalog_list.style.display;
+
+  if (displaySetting == 'flex') {
+      catalog_list.style.display = 'none';
+    }
+    else {
+      catalog_list.style.display = 'flex';
+    }
+
+}
+
+ catalog_link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  toggleCatalog();
+});
+
 var popup_link = document.querySelector(".form-link-btn");
 
 var popup = document.querySelector(".modal-feedback");
