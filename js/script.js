@@ -1,3 +1,25 @@
+/* catalog drop-down menu */
+var catalog_link = document.querySelector(".catalog-link");
+
+var catalog_list = document.querySelector(".nav-item-groups");
+
+function toggleCatalog() {
+  var displaySetting = catalog_list.style.display;
+
+  if (displaySetting == 'flex') {
+      catalog_list.style.display = 'none';
+    }
+    else {
+      catalog_list.style.display = 'flex';
+    }
+
+}
+
+ catalog_link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  toggleCatalog();
+});
+
 /* main-slider */
 var toggle_1 = document.querySelector("#btn-1");
 var toggle_2 = document.querySelector("#btn-2");
@@ -62,28 +84,6 @@ feature_btn_3.addEventListener("click", function (evt) {
   feature_btn_1.classList.remove("feature-slide-active");
   feature_slide_2.classList.add("visually-hidden");
   feature_slide_1.classList.add("visually-hidden");
-});
-
-/* catalog drop-down menu */
-var catalog_link = document.querySelector(".catalog-link");
-
-var catalog_list = document.querySelector(".nav-item-groups");
-
-function toggleCatalog() {
-  var displaySetting = catalog_list.style.display;
-
-  if (displaySetting == 'flex') {
-      catalog_list.style.display = 'none';
-    }
-    else {
-      catalog_list.style.display = 'flex';
-    }
-
-}
-
- catalog_link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  toggleCatalog();
 });
 
 /* feedback popup */
