@@ -777,12 +777,10 @@ a {
   }
 
   .features-slider li:nth-child(2) {
-    display: none; /* prep-s to build js slider */
     background: url('../img/warranty.svg')  94% no-repeat;
   }
 
   .features-slider li:last-child {
-    display: none; /* prep-s to build js slider */
     background: url('../img/credit.svg') 90%  47% no-repeat;
   }
 
