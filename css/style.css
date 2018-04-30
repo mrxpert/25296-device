@@ -80,6 +80,15 @@ a {
   overflow: hidden;
 }
 
+.slide-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
 .title {
   font-size: 47px;
   line-height: 55px;

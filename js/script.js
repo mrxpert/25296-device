@@ -30,21 +30,21 @@ var slide_2 = document.querySelector("#slide_2");
 var slide_3 = document.querySelector("#slide_3");
 
 toggle_1.addEventListener("click", function (evt) {
-  slide_1.classList.remove("visually-hidden");
-  slide_2.classList.add("visually-hidden");
-  slide_3.classList.add("visually-hidden");
+  slide_1.classList.remove("slide-hidden");
+  slide_2.classList.add("slide-hidden");
+  slide_3.classList.add("slide-hidden");
 });
 
 toggle_2.addEventListener("click", function (evt) {
-  slide_2.classList.remove("visually-hidden");
-  slide_1.classList.add("visually-hidden");
-  slide_3.classList.add("visually-hidden");
+  slide_2.classList.remove("slide-hidden");
+  slide_1.classList.add("slide-hidden");
+  slide_3.classList.add("slide-hidden");
 });
 
 toggle_3.addEventListener("click", function (evt) {
-  slide_3.classList.remove("visually-hidden");
-  slide_2.classList.add("visually-hidden");
-  slide_1.classList.add("visually-hidden");
+  slide_3.classList.remove("slide-hidden");
+  slide_2.classList.add("slide-hidden");
+  slide_1.classList.add("slide-hidden");
 });
 
 /* features slider */
